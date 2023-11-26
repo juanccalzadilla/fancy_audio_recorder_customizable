@@ -265,11 +265,11 @@ class WaveButton extends StatelessWidget {
   Widget get _switchIconState {
     switch (state) {
       case FancyAudioRecorderState.start:
-        return recordIcon ?? const Icon(Icons.mic_rounded, size: 40);
+        return recordIcon ??  Icon(Icons.mic_rounded, size: 40, color: iconColor,);
       case FancyAudioRecorderState.recording:
-        return stopIcon ?? const Icon(Icons.stop_rounded, size: 40);
+        return stopIcon ??  Icon(Icons.stop_rounded, size: 40, color: iconColor,);
       case FancyAudioRecorderState.recorded:
-        return deleteIcon ?? const Icon(Icons.delete_rounded, size: 40);
+        return deleteIcon ??  Icon(Icons.delete_rounded, size: 40, color: iconColor,);
     }
   }
 }
